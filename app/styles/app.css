@@ -26,6 +26,16 @@ div#slogan {
 
 a#ember393 {
   border: 1px solid;
-  margin-top:8%;
+  margin-top:15%;
   color: #000000;
+}
+
+div#listnav {
+  margin-top: 5%;
+  margin-left: 10%;
+  width:100px;
+}
+
+.goal.container{
+  width: 500px;
 }

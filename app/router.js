@@ -6,7 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('goal-tile');
+  this.route('list-tile', {});
+  this.route('list', {path: 'list/:list_id'});
 });
 
 export default Router;

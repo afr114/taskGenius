@@ -1,0 +1,6 @@
+<div id="listnav">
+{{#each model as |list|}}
+  {{#link-to 'list' list.id}}{{list.name}}{{/link-to}}
+{{/each}}
+<!-- {{new-list}} -->
+</div>
