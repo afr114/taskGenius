@@ -1,0 +1,31 @@
+h3#logo {
+  margin: -3%;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+
+nav.navbar.navbar-default {
+  background-color: #FFFFFF;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h2#tagline{
+  width:400px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p#tagcopy{
+  width:360px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div#slogan {
+  margin-top:6%;
+}
+
+a#ember393 {
+  border: 1px solid;
+  margin-top:8%;
+  color: #000000;
+}
