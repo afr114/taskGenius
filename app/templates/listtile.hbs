@@ -1,0 +1,12 @@
+<div class="container">
+  <div id="list">
+    {{#each model as |list|}}
+      {{#link-to 'listtile.list' list.id}}{{list.name}}{{/link-to}}
+    {{/each}}
+    <!-- {{new-list}} -->
+  </div>
+
+  <div class="body">
+      {{outlet}}
+  </div>
+</div>
