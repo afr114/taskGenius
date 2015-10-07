@@ -5,7 +5,12 @@ export default Ember.Route.extend({
     return this.store.findAll('list');
   },
 
-  renderTemplate(){
-    this.render('/list/0');
+  actions: {
+    saveGoal(params) {
+      var newGoal = this.store.createRecord('goal', params);
+      newGoal.save();
+      this.transitionTo('listtitle');
+    }
   }
+
 });
