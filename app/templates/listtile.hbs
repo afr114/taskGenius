@@ -1,12 +1,15 @@
-<div class="container">
   <div id="list">
+    <ul class="nav nav-tabs">
     {{#each model as |list|}}
-      {{#link-to 'listtile.list' list.id}}{{list.name}}{{/link-to}}
+        <li class="active">{{#link-to 'listtile.list' list.id}}{{list.name}}{{/link-to}}</li>
     {{/each}}
-    <!-- {{new-list}} -->
+    </ul>
+  </div>
+
+  <div id="side">
+    {{new-list saveList="saveList" list=list}}
   </div>
 
   <div class="body">
       {{outlet}}
   </div>
-</div>
