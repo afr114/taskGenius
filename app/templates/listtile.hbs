@@ -1,9 +1,13 @@
-  <div id="list">
+  <div class="list">
     <ul class="nav nav-tabs">
-    {{#each model as |list|}}
-        <li>{{#link-to 'listtile.list' list.id}}{{list.title}}{{/link-to}}</li>
+      {{#each model as |list|}}
+          <li>{{#link-to 'listtile.list' list.id}}{{list.title}}{{/link-to}}</li>
+          <!-- <li><button type="button"  class="btn btn-xs btn-default" {{action 'deleteList'}}>
+              <span class="list glyphicon glyphicon-trash"></span>
+              </button>
+          </li> -->
     {{/each}}
-    </ul>
+      </ul>
   </div>
 
   <div id="side">

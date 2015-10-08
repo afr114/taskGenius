@@ -1,7 +1,7 @@
 <form>
   <label for="title"></label>
   {{input value=title id="title" placeholder="Add New List"}}
-  <button class="btn btn-xs" {{saveList}}>Add</button>
+  <button type="button"  class="btn btn-xs btn-default" {{action 'saveList'}}>
+    <span class="glyphicon glyphicon-plus"></span>
+  </button>
 </form>
-
-<!-- {{yield}} -->

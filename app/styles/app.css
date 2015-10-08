@@ -38,4 +38,11 @@ div#listnav {
 
 .goal.container{
   width: 500px;
+  margin-top:1%;
+}
+
+div#side {
+  margin-top: 1%;
+  float: left;
+  margin-left: 1%
 }
