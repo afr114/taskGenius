@@ -36,8 +36,9 @@ div#listnav {
   width:100px;
 }
 
-.goal.container{
-  width: 500px;
+.goal-container {
+  width: 600px;
+  margin: 0 auto;
   margin-top:1%;
 }
 
@@ -45,4 +46,14 @@ div#side {
   margin-top: 1%;
   float: left;
   margin-left: 1%
+}
+
+div#goals {
+  margin: 0 auto;
+}
+
+.goallist{
+  width: 600px;
+  margin: 0 auto;
+  margin-top:3%;
 }

@@ -1,1 +1,31 @@
-{{add-goal saveGoal='saveGoal'}}
+<div class="container">
+  {{add-goal saveGoal='saveGoal' list=model}}
+
+  <div class="goallist">
+    <table class="table table-striped goals">
+        {{#each model.goals as |goal|}}
+      <tbody>
+        <tr>
+        <td>{{goal.name}}</td>
+        <td class="col-sm-1"><button type="button"  class="note btn btn-xs btn-default">
+          <span  class="glyphicon glyphicon-plus"></span>
+          </button>
+        </td>
+        <td class="col-sm-1"><button type="button"  class="note btn btn-xs btn-default">
+          <span  class="glyphicon glyphicon-remove-sign"></span>
+          </button>
+        </td>
+        <td class="col-sm-1"><button type="button"  class="note btn btn-xs btn-default">
+          <span  class="glyphicon glyphicon-ok-sign"></span>
+          </button>
+        </td>
+        <td class="col-sm-1"><button type="button"  class="note btn btn-xs btn-default">
+          <span  class="glyphicon glyphicon-calendar"></span>
+          </button>
+        </td>
+        </tr>
+      </tbody>
+        {{/each}}
+    </table>
+  </div>
+</div>

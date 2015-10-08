@@ -1,4 +1,4 @@
-<div class="goal container">
+<div class="goal-container">
   <form>
     <div class="form-group">
       {{input class="form-control" value=name id="name" placeholder="Add your goal's for today"}}
@@ -10,14 +10,13 @@
       {{/if}}
     </div>
 
-
     <div class="row">
       <div class="col-xs-4">
-      <button class="btn btn-sm"{{action 'saveGoal'}}>Save</button>
-      <button type="button"  class="note btn btn-xs btn-default" {{action 'openNoteField'}} {{action 'closeNoteField' on="doubleClick"}}>
-        <span  class="glyphicon glyphicon-plus"></span> Note
-      </button>
-    </div>
+        <button class="btn btn-sm"{{action 'saveGoal'}}>Save</button>
+        <button type="button"  class="note btn btn-xs btn-default" {{action 'openNoteField'}} {{action 'closeNoteField' on="doubleClick"}}>
+          <span  class="glyphicon glyphicon-plus"></span> Note
+        </button>
+      </div>
     </div>
   </form>
 </div>

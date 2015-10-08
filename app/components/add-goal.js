@@ -18,6 +18,10 @@ actions: {
       note: this.get('note'),
       list: this.get('list')
     };
+    if (params.note == undefined) {
+        params.note = ""
+      }
+      
       this.sendAction('saveGoal', params);
     }
   }
