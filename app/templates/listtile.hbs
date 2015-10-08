@@ -1,7 +1,7 @@
   <div id="list">
     <ul class="nav nav-tabs">
     {{#each model as |list|}}
-        <li class="active">{{#link-to 'listtile.list' list.id}}{{list.name}}{{/link-to}}</li>
+        <li>{{#link-to 'listtile.list' list.id}}{{list.title}}{{/link-to}}</li>
     {{/each}}
     </ul>
   </div>

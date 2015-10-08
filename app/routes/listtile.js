@@ -9,7 +9,6 @@ export default Ember.Route.extend({
     saveList(params) {
       var newList = this.store.createRecord('list', params);
       newList.save();
-      this.transitionTo('listtile')
     }
   }
 });

@@ -4,10 +4,9 @@ export default Ember.Component.extend({
   actions: {
     saveList() {
       var params = {
-        name: this.get('name'),
+        title: this.get('title')
         };
       this.sendAction('saveList', params);
-      debugger;
       }
     }
   });
