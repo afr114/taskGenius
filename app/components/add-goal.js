@@ -6,8 +6,9 @@ actions: {
   saveGoal() {
     var params = {
       name: this.get('name'),
-      note: this.get('note')
-      };
+      note: this.get('note'),
+      list: this.get('list')
+    };
       this.sendAction('saveGoal', params);
     }
   }
