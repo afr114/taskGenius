@@ -1,7 +1,11 @@
-  <div class="list">
+  <div id="side">
+    {{new-list saveList="saveList" list=list}}
+  </div>
+
+  <div id="list">
     <ul class="nav nav-tabs">
       {{#each model as |list|}}
-          <li>{{#link-to 'listtile.list' list.id}}{{list.title}}{{/link-to}}</li>
+          <li><a>{{#link-to 'listtile.list' list.id}}{{list.title}}{{/link-to}}</a></li>
           <!-- <li><button type="button"  class="btn btn-xs btn-default" {{action 'deleteList'}}>
               <span class="list glyphicon glyphicon-trash"></span>
               </button>
@@ -10,9 +14,11 @@
       </ul>
   </div>
 
-  <div id="side">
-    {{new-list saveList="saveList" list=list}}
-  </div>
 
-
+<div class="container">
   {{outlet}}
+
+  <!-- <div id="calendar">
+    {{full-calendar events="events"}}
+  </div> -->
+</div>

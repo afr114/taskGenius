@@ -61,3 +61,9 @@ div#goals {
 td#goalname {
   text-decoration: none;
 }
+
+#calendar{
+  width: 600px;
+  margin: 0 auto;
+  height: 400px; 
+}

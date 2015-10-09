@@ -10,5 +10,12 @@ export default Ember.Route.extend({
       var newList = this.store.createRecord('list', params);
       newList.save();
     }
-  }
+  },
+
 });
+
+
+
+  $(document).ready(function() {
+      $('#calendar').fullCalendar('changeView', 'agendaDay');
+    });
