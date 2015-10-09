@@ -57,3 +57,7 @@ div#goals {
   margin: 0 auto;
   margin-top:3%;
 }
+
+td#goalname {
+  text-decoration: none;
+}

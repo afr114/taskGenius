@@ -9,12 +9,19 @@ export default Ember.Route.extend({
     saveGoal(params) {
       var newGoal = this.store.createRecord('goal', params);
       var list = params.list;
-
       list.get('goals').addObject(newGoal);
       newGoal.save().then(function() {
           return list.save();
       });
       this.transitionTo('index');
+    },
+
+    destroyGoal(goal){
+      goal.destroyRecord();
+    },
+
+    achieveGoal: function() {
+      $("#goalname").css("text-decoration","line-through");
     }
   }
 });
